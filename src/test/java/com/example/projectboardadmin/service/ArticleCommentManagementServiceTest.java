@@ -2,6 +2,7 @@ package com.example.projectboardadmin.service;
 
 import com.example.projectboardadmin.domain.constant.RoleType;
 import com.example.projectboardadmin.dto.ArticleCommentDto;
+import com.example.projectboardadmin.dto.AdminAccountDto;
 import com.example.projectboardadmin.dto.UserAccountDto;
 import com.example.projectboardadmin.dto.properties.ProjectProperties;
 import com.example.projectboardadmin.dto.response.ArticleCommentClientResponse;
@@ -170,7 +171,6 @@ class ArticleCommentManagementServiceTest {
     private UserAccountDto createUserAccountDto() {
         return UserAccountDto.of(
                 "unoTest",
-                "pw",
                 Set.of(RoleType.ADMIN),
                 "uno-test@email.com",
                 "uno-test",

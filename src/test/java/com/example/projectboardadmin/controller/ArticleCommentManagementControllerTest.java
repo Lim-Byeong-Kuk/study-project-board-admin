@@ -4,6 +4,7 @@ package com.example.projectboardadmin.controller;
 import com.example.projectboardadmin.config.SecurityConfig;
 import com.example.projectboardadmin.domain.constant.RoleType;
 import com.example.projectboardadmin.dto.ArticleCommentDto;
+import com.example.projectboardadmin.dto.AdminAccountDto;
 import com.example.projectboardadmin.dto.UserAccountDto;
 import com.example.projectboardadmin.service.ArticleCommentManagementService;
 import org.junit.jupiter.api.DisplayName;
@@ -102,19 +103,18 @@ class ArticleCommentManagementControllerTest {
                 null,
                 content,
                 LocalDateTime.now(),
-                "Uno",
+                "Lbk",
                 LocalDateTime.now(),
-                "Uno"
+                "Lbk"
         );
     }
 
     private UserAccountDto createUserAccountDto() {
         return UserAccountDto.of(
-                "unoTest",
-                "pw",
+                "lbkTest",
                 Set.of(RoleType.ADMIN),
-                "uno-test@email.com",
-                "uno-test",
+                "lbk-test@email.com",
+                "lbk-test",
                 "test memo"
         );
     }
