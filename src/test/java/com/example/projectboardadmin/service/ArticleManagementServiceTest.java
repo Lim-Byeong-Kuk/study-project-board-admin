@@ -1,8 +1,6 @@
 package com.example.projectboardadmin.service;
 
-import com.example.projectboardadmin.domain.constant.RoleType;
 import com.example.projectboardadmin.dto.ArticleDto;
-import com.example.projectboardadmin.dto.AdminAccountDto;
 import com.example.projectboardadmin.dto.UserAccountDto;
 import com.example.projectboardadmin.dto.properties.ProjectProperties;
 import com.example.projectboardadmin.dto.response.ArticleClientResponse;
@@ -25,7 +23,6 @@ import org.springframework.test.web.client.response.MockRestResponseCreators;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
